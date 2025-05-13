@@ -1,0 +1,72 @@
+[
+  {
+    "code": "FABS",
+    "name": "Faculty of Arts, Business and Social Sciences",
+    "departments": [
+      {
+        "code": "AHCI",
+        "name": "School of Arts, Humanities and Creative Industries"
+      },
+      {
+        "code": "SSS",
+        "name": "School of Social Sciences"
+      },
+      {
+        "code": "SBS",
+        "name": "Surrey Business School"
+      }
+    ]
+  },
+  {
+    "code": "FEPS",
+    "name": "Faculty of Engineering and Physical Sciences",
+    "departments": [
+      {
+        "code": "SCCE",
+        "name": "School of Chemistry and Chemical Engineering"
+      },
+      {
+        "code": "SCEE",
+        "name": "School of Computer Science and Electronic Engineering"
+      },
+      {
+        "code": "SMP",
+        "name": "School of Mathematics and Physics"
+      },
+      {
+        "code": "SMES",
+        "name": "School of Mechanical Engineering Sciences"
+      },
+      {
+        "code": "SSCEE",
+        "name": "School of Sustainability, Civil and Environmental Engineering"
+      }
+    ]
+  },
+  {
+    "code": "FHMS",
+    "name": "Faculty of Health and Medical Sciences",
+    "departments": [
+      {
+        "code": "SBIO",
+        "name": "School of Biosciences"
+      },
+      {
+        "code": "SHS",
+        "name": "School of Health Sciences"
+      },
+      {
+        "code": "SOM",
+        "name": "School of Medicine"
+      },
+      {
+        "code": "SOP",
+        "name": "School of Psychology"
+      },
+      {
+        "code": "SVM",
+        "name": "School of Veterinary Medicine"
+      }
+    ]
+  }
+]

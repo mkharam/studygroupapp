@@ -1,13 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { MajorsModulesProvider } from './context/MajorsModulesContext';
+import { unstable_HistoryRouter as HistoryRouter } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const history = createBrowserHistory({
+  v7_startTransition: true,
+  v7_relativeSplatPath: true
+});
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <MajorsModulesProvider>
+      <HistoryRouter history={history}>
+        <App />
+      </HistoryRouter>
+    </MajorsModulesProvider>
   </React.StrictMode>
 );
 

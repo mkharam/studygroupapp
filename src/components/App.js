@@ -85,23 +85,3 @@ function App() {
     </AuthProvider>
   );
 }
-
-// Temporary Admin placeholder component
-// Replace this with your actual admin component when ready
-function AdminPlaceholder() {
-  return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-4">Admin Dashboard</h1>
-      <p className="mb-4">This admin section is currently under development.</p>
-      <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-6">
-        <p className="font-bold">Note</p>
-        <p>Only authorized administrators should access this area.</p>
-      </div>
-      <a href="/" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
-        Return to Home
-      </a>
-    </div>
-  );
-}
-
-export default App;
