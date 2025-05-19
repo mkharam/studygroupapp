@@ -1,70 +1,152 @@
-# Getting Started with Create React App
+# StudyGroupApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive platform for facilitating study group formation and management at the University of Surrey. This application helps students connect with peers, coordinate study sessions, and optimize the use of campus study spaces.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Core Functionality
+- **Study Group Management**
+  - Create and join study groups for specific modules
+  - Real-time group updates and notifications
+  - Member management with role-based permissions
+  - Study session scheduling and tracking
 
-### `npm start`
+- **Location Services**
+  - Interactive campus map integration
+  - Study space availability tracking
+  - Real-time location sharing
+  - Space search and filtering
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Communication Tools**
+  - Real-time chat system
+  - Study session coordination
+  - Progress monitoring
+  - Group announcements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **User Management**
+  - Secure authentication
+  - Profile management
+  - Module enrollment tracking
+  - Academic preferences
 
-### `npm test`
+## Technical Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- React 18
+- Tailwind CSS
+- React Router
+- React Icons
+- Jest for testing
 
-### `npm run build`
+### Backend
+- Firebase Authentication
+- Firebase Realtime Database
+- Firebase Cloud Functions
+- Firebase Cloud Storage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### APIs
+- Google Maps Platform
+- Calendar API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- Firebase account
+- Google Maps API key
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/studygroupapp.git
+cd studygroupapp
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install dependencies:
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Set up environment variables:
+Create a `.env` file in the root directory with the following variables:
+```env
+REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+REACT_APP_FIREBASE_DATABASE_URL=your_firebase_database_url
+REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+REACT_APP_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
+```bash
+npm start
+```
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+studygroupapp/
+├── src/
+│   ├── components/         # React components
+│   ├── context/           # React context providers
+│   ├── firebase/          # Firebase configuration and utilities
+│   ├── hooks/             # Custom React hooks
+│   ├── utils/             # Utility functions
+│   ├── views/             # Page components
+│   └── App.js             # Main application component
+├── public/                # Static files
+├── functions/             # Firebase Cloud Functions
+└── tests/                 # Test files
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Testing
 
-### Code Splitting
+Run the test suite:
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deployment
 
-### Analyzing the Bundle Size
+1. Build the application:
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Deploy to Firebase:
+```bash
+firebase deploy
+```
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Legal and Ethical Considerations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Data Protection
+- GDPR compliant
+- Secure data storage
+- User consent management
+- Data retention policies
 
-### Deployment
+### Accessibility
+- WCAG 2.1 compliance
+- Screen reader support
+- Keyboard navigation
+- Color contrast compliance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+
+- University of Surrey for support and resources
+- Firebase team for excellent documentation
+- React community for amazing tools and libraries
+
+
+
+*Developed as part of the Final Year Project at the University of Surrey*
